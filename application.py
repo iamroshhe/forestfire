@@ -4,7 +4,8 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 
-app=Flask(__name__)
+application=Flask(__name__)
+app=application #this work is done so that we can use this AWS beanstock
 
 #import ridge regressor and standard scaler pickle file
 scaler=pickle.load(open('models\\scaler.pkl','rb'))
